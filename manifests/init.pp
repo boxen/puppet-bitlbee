@@ -1,3 +1,8 @@
+# Public: Install Bitlbee.
+#
+# Examples
+#
+#   include bitlbee
 class bitlbee {
     include bitlbee::config
 
