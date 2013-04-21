@@ -8,7 +8,7 @@ class bitlbee {
 
     package { 'bitlbee':
         provider => homebrew,
-        notify => Service['bitlbee'],
+        notify   => Service['bitlbee'],
     }
 
     file { [
