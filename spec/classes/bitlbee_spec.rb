@@ -10,7 +10,8 @@ describe 'bitlbee' do
   it { should include_class('bitlbee::config') }
   it { should contain_package('bitlbee').with_provider('homebrew') }
   it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with( 'group' => 'wheel', 'owner' => 'root') }
+  it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<string>-p<\/string>\s*<string>6667<\/string>/) }
   it { should contain_file("#{facts[:boxen_home]}/config/bitlbee").with('ensure' => 'directory') }
   it { should contain_file("#{facts[:boxen_home]}/log/bitlbee").with('ensure' => 'directory') }
   it { should contain_service('bitlbee').with(:ensure => 'running') }
-end
+  end
