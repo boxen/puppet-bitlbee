@@ -1,25 +1,18 @@
-# Template Bitlbee for Boxen
+# Bitlbee Puppet Module for Boxen
 
-An example of how we write Puppet modules for Boxen. Replace this
-paragraph with a short explanation of what the heck makes your module
-useful.
+[![Build Status](https://travis-ci.org/lglenn/puppet-bitlbee.png?branch=master)](https://travis-ci.org/lglenn/puppet-bitlbee)
 
-A great module has a working travis build
-
-[![Build Status](https://travis-ci.org/boxen/puppet-template.png?branch=master)](https://travis-ci.org/boxen/puppet-template)
+Install [Bitlbee](http://www.bitlbee.org/), an IRC to other networks gateway.
 
 ## Usage
 
 ```puppet
-boxen::example { 'best example ever':
-  salutation => 'fam'
-}
+include bitlbee
 ```
 
 ## Required Puppet Modules
 
 * `boxen`
-* `anything-else`
 
 ## Development
 
