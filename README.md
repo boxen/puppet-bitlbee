@@ -4,7 +4,7 @@
 
 Install [Bitlbee](http://www.bitlbee.org/), an IRC to other networks gateway.
 
-* Runs as a daemon at startup.
+* Runs as a Launch Daemon.
 * Configured to listen only to the localhost interface, as Bitlbee does have the ability to log into other networks as you.
 * Listens on the standard port (6667), as this isn't really a dev thing.
 
