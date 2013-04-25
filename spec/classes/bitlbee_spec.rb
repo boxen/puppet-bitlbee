@@ -16,7 +16,7 @@ describe 'bitlbee' do
     it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<string>-D<\/string>/), "Should run in daemon mode" }
     it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<string>-n<\/string>/), "Should not fork" }
     it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<string>-p<\/string>\s*<string>6667<\/string>/), "Should run on port 6667" }
-    it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<string>-i<\/string>\s*<string>localhost<\/string>/), "Should be running with -i localhost." }
+    it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<string>-i<\/string>\s*<string>127.0.0.1<\/string>/), "Should be running with -i 127.0.0.1." }
     it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<key>UserName<\/key>\s*<string>#{facts[:luser]}<\/string>/) }
     it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<key>StandardErrorPath<\/key>\s*<string>#{facts[:boxen_home]}\/log\/bitlbee\/console.log<\/string>/), "Stderr should go to #{facts[:boxen_home]}/log/bitlbee/console.log" }
     it { should contain_file('/Library/LaunchDaemons/bitlbee.plist').with_content(/<key>StandardOutPath<\/key>\s*<string>#{facts[:boxen_home]}\/log\/bitlbee\/console.log<\/string>/), "Stdout should go to #{facts[:boxen_home]}/log/bitlbee/console.log" }
