@@ -24,4 +24,4 @@ describe 'bitlbee' do
   it { should contain_file("#{facts[:boxen_home]}/config/bitlbee").with('ensure' => 'directory') }
   it { should contain_file("#{facts[:boxen_home]}/log/bitlbee").with('ensure' => 'directory') }
   it { should contain_service('bitlbee').with(:ensure => 'running') }
-  end
+end
