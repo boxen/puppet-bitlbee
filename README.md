@@ -1,6 +1,6 @@
 # Bitlbee Puppet Module for Boxen
 
-[![Build Status](https://travis-ci.org/lglenn/puppet-bitlbee.png?branch=master)](https://travis-ci.org/lglenn/puppet-bitlbee)
+[![Build Status](https://travis-ci.org/boxen/puppet-bitlbee.png?branch=master)](https://travis-ci.org/boxen/puppet-bitlbee)
 
 Install [Bitlbee](http://www.bitlbee.org/), an IRC to other networks gateway.
 
